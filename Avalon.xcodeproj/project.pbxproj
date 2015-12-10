@@ -15,6 +15,7 @@
 		90639F6F1BD2690400FFEA89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90639F6D1BD2690400FFEA89 /* LaunchScreen.storyboard */; };
 		90639F7A1BD2690400FFEA89 /* AvalonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90639F791BD2690400FFEA89 /* AvalonTests.m */; };
 		90639F851BD2690400FFEA89 /* AvalonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90639F841BD2690400FFEA89 /* AvalonUITests.m */; };
+		90639F961BD2705D00FFEA89 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90639F951BD2705D00FFEA89 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		90639F801BD2690400FFEA89 /* AvalonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvalonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90639F841BD2690400FFEA89 /* AvalonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AvalonUITests.m; sourceTree = "<group>"; };
 		90639F861BD2690400FFEA89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90639F951BD2705D00FFEA89 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90639F961BD2705D00FFEA89 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		90639F531BD2690300FFEA89 = {
 			isa = PBXGroup;
 			children = (
+				90639F951BD2705D00FFEA89 /* AVFoundation.framework */,
 				90639F5E1BD2690300FFEA89 /* Avalon */,
 				90639F781BD2690400FFEA89 /* AvalonTests */,
 				90639F831BD2690400FFEA89 /* AvalonUITests */,
@@ -207,6 +211,7 @@
 				TargetAttributes = {
 					90639F5B1BD2690300FFEA89 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = SKH9QPUEP2;
 					};
 					90639F741BD2690400FFEA89 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -413,10 +418,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Avalon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jabberrock.Avalon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -424,10 +431,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Avalon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jabberrock.Avalon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
